@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = HiddyPrefs;
+	cell = PSLinkCell;
+	detail = HDYRootListController;
+	icon = icon.png;
+	isController = 1;
+	label = "Hiddy";
+    };
+}

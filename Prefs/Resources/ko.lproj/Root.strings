@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>DEVELOPER</key>
+  <string>개발자</string>
+  <key>ENABLE</key>
+  <string>활성화</string>
+  <key>ARE_YOU_SURE_TO_RESPRING</key>
+  <string>정말로 리스프링 하시겠습니까?</string>
+  <key>OK</key>
+  <string>확인</string>
+  <key>OK_TITLE</key>
+  <string>확인</string>
+  <key>CANCEL</key>
+  <string>취소</string>
+  <key>RESPRING</key>
+  <string>리스프링</string>
+  <key>ARE_YOU_SURE_TO_RESET_PREFS</key>
+	<string>정말로 설정을 기본값으로 돌리시겠습니까? 이 행동은 되돌릴 수 없습니다.</string>
+	<key>RESET_PREFS</key>
+	<string>설정을 기본값으로 돌리고 리스프링</string>
+	<key>LINKS</key>
+	<string>링크</string>
+	<key>DONATE_TO_PETERDEV</key>
+	<string>PeterDev에게 기부하기</string>
+	<key>SUPPORT_ME</key>
+	<string>지원해주세요!</string>
+  <key>TWEAK_SETTING</key>
+  <string>트윅 설정</string>
+  <key>E_MAIL</key>
+  <string>이메일 보내기</string>
+  <key>SEND_BUG_TO_ME</key>
+  <string>버그나 문제점, 아이디어를 이메일로 보내주세요!</string>
+  <key>HIDE_APPS</key>
+  <string>앱 숨기기</string>
+</dict>
+
+</plist>

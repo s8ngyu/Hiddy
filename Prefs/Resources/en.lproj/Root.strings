@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>DEVELOPER</key>
+  <string>Developer</string>
+  <key>ENABLE</key>
+  <string>Enable</string>
+  <key>ARE_YOU_SURE_TO_RESPRING</key>
+  <string>Are you sure to respring?</string>
+  <key>OK</key>
+  <string>OK</string>
+  <key>OK_TITLE</key>
+  <string>OK</string>
+  <key>CANCEL</key>
+  <string>Cancel</string>
+  <key>RESPRING</key>
+  <string>Respring</string>
+  <key>ARE_YOU_SURE_TO_RESET_PREFS</key>
+	<string>Are you sure you want to restore default settings? It cannot be undone.</string>
+	<key>RESET_PREFS</key>
+	<string>Restore default settings and respring </string>
+	<key>LINKS</key>
+	<string>Links</string>
+	<key>DONATE_TO_PETERDEV</key>
+	<string>Donate to PeterDev</string>
+	<key>SUPPORT_ME</key>
+	<string>Support me!</string>
+  <key>TWEAK_SETTING</key>
+  <string>Tweak Setting</string>
+  <key>E_MAIL</key>
+  <string>Send an E-mail to us</string>
+  <key>SEND_BUG_TO_ME</key>
+  <string>Send us bugs, problems or ideas.</string>
+  <key>HIDE_APPS</key>
+  <string>Hide Apps</string>
+</dict>
+
+</plist>
