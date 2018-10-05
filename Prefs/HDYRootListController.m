@@ -23,7 +23,7 @@
 
 -(void)selectHideApps
 {
-    SparkAppListTableViewController* s = [[SparkAppListTableViewController alloc] initWithIdentifier:@"com.peterdev.hiddy.plist" andKey:@"hide"];
+    SparkAppListTableViewController* s = [[SparkAppListTableViewController alloc] initWithIdentifier:@"com.peterdev.hiddy.plist" andKey:@"kEnable"];
 
     [self.navigationController pushViewController:s animated:YES];
     self.navigationItem.hidesBackButton = FALSE;
