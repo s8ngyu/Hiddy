@@ -1,6 +1,6 @@
 Package: com.peterdev.hiddy
 Name: Hiddy
-Depends: mobilesubstrate, ws.hbang.common (>= 1.11), firmware (>= 3.0), com.rpetrich.rocketbootstrap (>= 1.0.3) | firmware (<< 12.0)
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), com.spark.libsparkapplist
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!

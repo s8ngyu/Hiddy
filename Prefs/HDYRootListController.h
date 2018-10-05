@@ -4,8 +4,7 @@
 #import <CepheiPrefs/HBAppearanceSettings.h>
 #import <Cephei/HBPreferences.h>
 #import <spawn.h>
-#import <AppList/AppList.h>
+#import "SparkAppListTableViewController.h"
 
 @interface HDYRootListController : HBRootListController
-
 @end

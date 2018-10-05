@@ -3,7 +3,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = Hiddy
 Hiddy_FILES = Tweak.xm
 Hiddy_EXTRA_FRAMEWORKS += Cephei
-Hiddy_LIBRARIES = applist
+Hiddy_LIBRARIES = sparkapplist
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

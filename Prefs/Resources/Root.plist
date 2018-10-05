@@ -45,52 +45,15 @@
 			<string>com.peterdev.hiddy/settingschanged</string>
 		</dict>
 
-		<!--AppList-->
+		<!--SparkAppList-->
 		<dict>
-			<key>cell</key>
-			<string>PSLinkCell</string>
-			<key>bundle</key>
-			<string>AppList</string>
-			<key>isController</key>
-			<string>1</string>
-			<key>label</key>
-			<string>HIDE_APPS</string>
-			<key>ALAllowsSelection</key>
-			<string>1</string>
-			<key>ALChangeNotification</key>
-			<string>com.peterdev.hiddy.applist/settingschanged</string>
-			<key>ALSectionDescriptors</key>
-			<array>
-				<dict>
-					<key>cell-class-name</key>
-					<string>ALSwitchCell</string>
-					<key>icon-size</key>
-					<string>29</string>
-					<key>predicate</key>
-					<string>isSystemApplication = TRUE</string>
-					<key>suppress-hidden-apps</key>
-					<string>1</string>
-					<key>title</key>
-					<string>System Application</string>
-				</dict>
-				<dict>
-					<key>cell-class-name</key>
-					<string>ALSwitchCell</string>
-					<key>icon-size</key>
-					<string>29</string>
-					<key>predicate</key>
-					<string>isSystemApplication = FALSE</string>
-					<key>suppress-hidden-apps</key>
-					<string>1</string>
-					<key>title</key>
-					<string>User Application</string>
-				</dict>
-			</array>
-			<key>ALSettingsKeyPrefix</key>
-			<string></string>
-			<key>ALSettingsPath</key>
-			<string>/var/mobile/Library/Preferences/com.peterdev.hiddy.applist.plist</string>
-		</dict>
+        <key>cell</key>
+        <string>PSButtonCell</string>
+        <key>label</key>
+        <string>Select Apps to Hide</string>
+        <key>action</key>
+        <string>selectHideApps</string>
+    </dict>
 
 
 <!--Links-->

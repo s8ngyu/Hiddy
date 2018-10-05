@@ -1,6 +1,16 @@
 #include "HDYRootListController.h"
 
 @implementation HDYRootListController
+
+-(void)selectHideApps
+{
+    SparkAppListTableViewController* s = [[SparkAppListTableViewController alloc] initWithIdentifier:@"com.peterdev.hiddy" andKey:@"hide"];
+
+    [self.navigationController pushViewController:s animated:YES];
+    self.navigationItem.hidesBackButton = FALSE;
+}
+
+
 - (instancetype)init {
 	self = [super init];
 

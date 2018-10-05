@@ -1,53 +1,25 @@
-static BOOL kEnable = YES;
+#import "SparkAppList.h"
 
 
-/*
-Dear Developers, I want to put bundle IDs in plist file in the 'kAppBundleID'.
-And, want to use it in line:25, 26.
-
-If it has one Bundle IDs, @"kAppBundleID" like this and If it has multiple Bundle IDs,
-@"kAppBundleID",
-@"kAppBundleID",
-@"kAppBundleID"
-like this. I'm new to AppList and can you guys help me?
-*/
-
-
-/*
 @interface SBApplicationIcon
 - (NSString *)applicationBundleID;
 @end
 
+
 %hook SBIconModel
 - (BOOL)isIconVisible:(SBApplicationIcon *)icon {
-  if(kEnable) {
-    NSArray<NSString *> *hide = @[
-        @"kAppBundleID",
-        @"kAppBundleID"
-    ];
+  NSString* bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier]; // This is dependent on where it is called, may not be the correct method for your tweak!
 
-    if ([hide containsObject:icon.applicationBundleID]) {
-        return NO;
-    }
+  if([SparkAppList doesIdentifier:@"com.peterdev.hiddy" andKey:@"hide" containBundleIdentifier:bundleIdentifier]) // This returns TRUE if the bundle identifer exists
+  {
+      // The bundle identifier is 'on' in the list. Do whatever.
+      // In the case of Notchless, this is an 'exclude' list - so I would prevent this hook from continuing and just return orig.
+      NSArray<NSString *> *hide = @[bundleIdentifier];
 
-    return %orig;
+      if ([hide containsObject:icon.applicationBundleID]) {
+          return NO;
+      }
   }
-  return %orig;
+    return %orig;
 }
 %end
-*/
-static void loadPrefs()
-{
-    NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.peterdev.hiddy.plist"];
-    if(prefs)
-    {
-        kEnable = ( [prefs objectForKey:@"kEnable"] ? [[prefs objectForKey:@"kEnable"] boolValue] : kEnable );
-    }
-    [prefs release];
-}
-
-%ctor
-{
-    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(), NULL, (CFNotificationCallback)loadPrefs, CFSTR("com.peterdev.hiddy/settingschanged"), NULL, CFNotificationSuspensionBehaviorCoalesce);
-    loadPrefs();
-}
