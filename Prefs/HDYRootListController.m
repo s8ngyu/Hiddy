@@ -1,4 +1,5 @@
 #include "HDYRootListController.h"
+#import "SparkAppListTableViewController.h"
 
 @implementation HDYRootListController
 - (instancetype)init {
@@ -23,7 +24,7 @@
 
 -(void)selectHideApps
 {
-    SparkAppListTableViewController* s = [[SparkAppListTableViewController alloc] initWithIdentifier:@"com.peterdev.hiddy.plist" andKey:@"kEnable"];
+    SparkAppListTableViewController* s = [[SparkAppListTableViewController alloc] initWithIdentifier:@"com.peterdev.hiddy" andKey:@"hide"];
 
     [self.navigationController pushViewController:s animated:YES];
     self.navigationItem.hidesBackButton = FALSE;
