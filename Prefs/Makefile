@@ -5,6 +5,7 @@ HiddyPrefs_FILES = HDYRootListController.m
 HiddyPrefs_INSTALL_PATH = /Library/PreferenceBundles
 HiddyPrefs_FRAMEWORKS = UIKit
 HiddyPrefs_PRIVATE_FRAMEWORKS = Preferences
+HiddyPrefs_LIBRARIES = sparkapplist
 HiddyPrefs_EXTRA_FRAMEWORKS = Cephei CepheiPrefs
 
 include $(THEOS_MAKE_PATH)/bundle.mk
